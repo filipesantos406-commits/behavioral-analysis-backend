@@ -1,0 +1,30 @@
+{
+    "name": "behavioral-analysis-backend",
+    "version": "1.0.0",
+    "description": "Motor analítico modular de análise comportamental via Gemini API",
+    "main": "src/server.js",
+    "scripts": {
+        "start": "node src/server.js",
+        "dev": "node --watch src/server.js"
+    },
+    "keywords": [
+        "gemini",
+        "behavioral-analysis",
+        "webhook",
+        "nlp"
+    ],
+    "author": "",
+    "license": "ISC",
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "dependencies": {
+        "@google/generative-ai": "^0.21.0",
+        "ajv": "^8.17.1",
+        "ajv-formats": "^3.0.1",
+        "dotenv": "^16.4.7",
+        "express": "^4.21.2",
+        "express-rate-limit": "^7.5.0",
+        "helmet": "^8.0.0"
+    }
+}
