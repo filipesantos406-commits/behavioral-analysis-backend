@@ -22,6 +22,10 @@ const webhookRouter = require('./webhook/webhookRouter');
 const errorHandler = require('./errors/errorHandler');
 
 const app = express();
+
+app.set('trust proxy', 1);
+
+app.use(express.json({ limit: '50kb' }));
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
